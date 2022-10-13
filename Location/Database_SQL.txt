@@ -1,0 +1,14 @@
+CREATE DATABASE location
+CREATE TABLE client(
+  idc int(11) PRIMARY KEY AUTO_INCREMENT,
+	nom VARCHAR(90),
+	prenom VARCHAR(30),
+	address VARCHAR(100),
+	ville VARCHAR(60));
+
+CREATE TABLE photocopieur(
+	idp int(11) PRIMARY KEY AUTO_INCREMENT, 
+	marque VARCHAR(30), 
+	modele VARCHAR(49), 
+	dates DATE, 
+	idc int(11));
