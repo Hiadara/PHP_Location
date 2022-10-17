@@ -60,7 +60,7 @@
                                     <a href="student-view.php?id=<?= $students ['id']; ?>" class="btn btn-success btn-sm">View</a>
                                     <a href="student-edit.php?id=<?= $students ['id']; ?>" class="btn btn-success btn-sm">Edit</a>
                                     <form action="code.php" method="POST" class="d-inline">
-                                      <button type="submit" name="delete_student" value="<?= $students['id'];?>" class="btn btn-danger btn-sm">Delete</button>
+                                      <button type="submit" name="delete_student" value="<?= $students['id'];?>" class="btn btn-danger btn-sm"><i class="bi bi-trash3-fill"></i>Delete</button>
                                     </form>
                                   </td>
                                 </tr>
@@ -88,7 +88,9 @@
 
 
 
-
+  <?php
+    require_once 'footer.php';
+  ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
